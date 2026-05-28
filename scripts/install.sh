@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-REPO_GIT_URL="git+https://github.com/Alishahryar1/free-claude-code.git"
+REPO_GIT_URL="git+https://github.com/Distendo/free-claude-code.git"
 PYTHON_VERSION="3.14.0"
 UV_INSTALL_URL="https://astral.sh/uv/install.sh"
 
@@ -113,7 +113,6 @@ install_or_update_uv() {
     add_uv_to_path
 
     if command -v uv >/dev/null 2>&1; then
-        run uv self update
         return 0
     fi
 
